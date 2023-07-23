@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtFilmAd = new System.Windows.Forms.TextBox();
-            this.txtKategori = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtLink = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnKaydet = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnTamEkran = new System.Windows.Forms.Button();
-            this.btnHakkimizda = new System.Windows.Forms.Button();
-            this.btnRenkDegistir = new System.Windows.Forms.Button();
-            this.btnCikis = new System.Windows.Forms.Button();
             this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Link = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnCikis = new System.Windows.Forms.Button();
+            this.btnRenkDegistir = new System.Windows.Forms.Button();
+            this.btnHakkimizda = new System.Windows.Forms.Button();
+            this.btnTamEkran = new System.Windows.Forms.Button();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.txtLink = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtKategori = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtFilmAd = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -65,35 +65,6 @@
             this.panel1.Size = new System.Drawing.Size(956, 60);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(238, 67);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(236, 368);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Film Listesi";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.webBrowser1);
-            this.groupBox2.Location = new System.Drawing.Point(480, 67);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(468, 368);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ekran";
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(3, 20);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(462, 345);
-            this.webBrowser1.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -103,6 +74,16 @@
             this.label1.Size = new System.Drawing.Size(186, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Film Arşivim";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Location = new System.Drawing.Point(238, 67);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(236, 368);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Film Listesi";
             // 
             // dataGridView1
             // 
@@ -123,6 +104,40 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
+            // Ad
+            // 
+            this.Ad.DataPropertyName = "Ad";
+            this.Ad.HeaderText = "Ad";
+            this.Ad.Name = "Ad";
+            this.Ad.ReadOnly = true;
+            // 
+            // Link
+            // 
+            this.Link.DataPropertyName = "Link";
+            this.Link.HeaderText = "Link";
+            this.Link.Name = "Link";
+            this.Link.ReadOnly = true;
+            this.Link.Visible = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.webBrowser1);
+            this.groupBox2.Location = new System.Drawing.Point(480, 67);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(468, 368);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ekran";
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(3, 20);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(462, 345);
+            this.webBrowser1.TabIndex = 0;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.groupBox4);
@@ -140,37 +155,68 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Film Listesi";
             // 
-            // label2
+            // groupBox4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Fil AD:";
+            this.groupBox4.Controls.Add(this.btnCikis);
+            this.groupBox4.Controls.Add(this.btnRenkDegistir);
+            this.groupBox4.Controls.Add(this.btnHakkimizda);
+            this.groupBox4.Controls.Add(this.btnTamEkran);
+            this.groupBox4.Location = new System.Drawing.Point(6, 187);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(208, 175);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "İşlemler";
             // 
-            // txtFilmAd
+            // btnCikis
             // 
-            this.txtFilmAd.Location = new System.Drawing.Point(82, 27);
-            this.txtFilmAd.Name = "txtFilmAd";
-            this.txtFilmAd.Size = new System.Drawing.Size(132, 24);
-            this.txtFilmAd.TabIndex = 1;
+            this.btnCikis.Location = new System.Drawing.Point(30, 134);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(151, 30);
+            this.btnCikis.TabIndex = 9;
+            this.btnCikis.Text = "Çıkış";
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
-            // txtKategori
+            // btnRenkDegistir
             // 
-            this.txtKategori.Location = new System.Drawing.Point(82, 57);
-            this.txtKategori.Name = "txtKategori";
-            this.txtKategori.Size = new System.Drawing.Size(132, 24);
-            this.txtKategori.TabIndex = 2;
+            this.btnRenkDegistir.Location = new System.Drawing.Point(30, 98);
+            this.btnRenkDegistir.Name = "btnRenkDegistir";
+            this.btnRenkDegistir.Size = new System.Drawing.Size(151, 30);
+            this.btnRenkDegistir.TabIndex = 8;
+            this.btnRenkDegistir.Text = "Renk Değiştir";
+            this.btnRenkDegistir.UseVisualStyleBackColor = true;
+            this.btnRenkDegistir.Click += new System.EventHandler(this.btnRenkDegistir_Click);
             // 
-            // label3
+            // btnHakkimizda
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Kategori: ";
+            this.btnHakkimizda.Location = new System.Drawing.Point(30, 62);
+            this.btnHakkimizda.Name = "btnHakkimizda";
+            this.btnHakkimizda.Size = new System.Drawing.Size(151, 30);
+            this.btnHakkimizda.TabIndex = 7;
+            this.btnHakkimizda.Text = "Hakkımızda";
+            this.btnHakkimizda.UseVisualStyleBackColor = true;
+            this.btnHakkimizda.Click += new System.EventHandler(this.btnHakkimizda_Click);
+            // 
+            // btnTamEkran
+            // 
+            this.btnTamEkran.Location = new System.Drawing.Point(30, 26);
+            this.btnTamEkran.Name = "btnTamEkran";
+            this.btnTamEkran.Size = new System.Drawing.Size(151, 30);
+            this.btnTamEkran.TabIndex = 6;
+            this.btnTamEkran.Text = "Tam Ekran";
+            this.btnTamEkran.UseVisualStyleBackColor = true;
+            this.btnTamEkran.Click += new System.EventHandler(this.btnTamEkran_Click);
+            // 
+            // btnKaydet
+            // 
+            this.btnKaydet.Location = new System.Drawing.Point(82, 117);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(132, 30);
+            this.btnKaydet.TabIndex = 1;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // txtLink
             // 
@@ -188,80 +234,37 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Link: ";
             // 
-            // btnKaydet
+            // txtKategori
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(82, 117);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(132, 30);
-            this.btnKaydet.TabIndex = 1;
-            this.btnKaydet.Text = "Kaydet";
-            this.btnKaydet.UseVisualStyleBackColor = true;
-            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            this.txtKategori.Location = new System.Drawing.Point(82, 57);
+            this.txtKategori.Name = "txtKategori";
+            this.txtKategori.Size = new System.Drawing.Size(132, 24);
+            this.txtKategori.TabIndex = 2;
             // 
-            // groupBox4
+            // label3
             // 
-            this.groupBox4.Controls.Add(this.btnCikis);
-            this.groupBox4.Controls.Add(this.btnRenkDegistir);
-            this.groupBox4.Controls.Add(this.btnHakkimizda);
-            this.groupBox4.Controls.Add(this.btnTamEkran);
-            this.groupBox4.Location = new System.Drawing.Point(6, 187);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(208, 175);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "İşlemler";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(5, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Kategori: ";
             // 
-            // btnTamEkran
+            // txtFilmAd
             // 
-            this.btnTamEkran.Location = new System.Drawing.Point(30, 26);
-            this.btnTamEkran.Name = "btnTamEkran";
-            this.btnTamEkran.Size = new System.Drawing.Size(151, 30);
-            this.btnTamEkran.TabIndex = 6;
-            this.btnTamEkran.Text = "Tam Ekran";
-            this.btnTamEkran.UseVisualStyleBackColor = true;
+            this.txtFilmAd.Location = new System.Drawing.Point(82, 27);
+            this.txtFilmAd.Name = "txtFilmAd";
+            this.txtFilmAd.Size = new System.Drawing.Size(132, 24);
+            this.txtFilmAd.TabIndex = 1;
             // 
-            // btnHakkimizda
+            // label2
             // 
-            this.btnHakkimizda.Location = new System.Drawing.Point(30, 62);
-            this.btnHakkimizda.Name = "btnHakkimizda";
-            this.btnHakkimizda.Size = new System.Drawing.Size(151, 30);
-            this.btnHakkimizda.TabIndex = 7;
-            this.btnHakkimizda.Text = "Hakkımızda";
-            this.btnHakkimizda.UseVisualStyleBackColor = true;
-            this.btnHakkimizda.Click += new System.EventHandler(this.btnHakkimizda_Click);
-            // 
-            // btnRenkDegistir
-            // 
-            this.btnRenkDegistir.Location = new System.Drawing.Point(30, 98);
-            this.btnRenkDegistir.Name = "btnRenkDegistir";
-            this.btnRenkDegistir.Size = new System.Drawing.Size(151, 30);
-            this.btnRenkDegistir.TabIndex = 8;
-            this.btnRenkDegistir.Text = "Renk Değiştir";
-            this.btnRenkDegistir.UseVisualStyleBackColor = true;
-            this.btnRenkDegistir.Click += new System.EventHandler(this.btnRenkDegistir_Click);
-            // 
-            // btnCikis
-            // 
-            this.btnCikis.Location = new System.Drawing.Point(30, 134);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(151, 30);
-            this.btnCikis.TabIndex = 9;
-            this.btnCikis.Text = "Çıkış";
-            this.btnCikis.UseVisualStyleBackColor = true;
-            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
-            // 
-            // Ad
-            // 
-            this.Ad.DataPropertyName = "Ad";
-            this.Ad.HeaderText = "Ad";
-            this.Ad.Name = "Ad";
-            // 
-            // Link
-            // 
-            this.Link.DataPropertyName = "Link";
-            this.Link.HeaderText = "Link";
-            this.Link.Name = "Link";
-            this.Link.Visible = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(25, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Fil AD:";
             // 
             // Form1
             // 
@@ -274,15 +277,16 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Film Arşivim";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);

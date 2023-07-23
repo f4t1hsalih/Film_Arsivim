@@ -14,6 +14,8 @@ namespace Film_Arsivim
 
         SqlConnection baglanti = new SqlConnection("Data Source = .\\SQLEXPRESS;Initial Catalog = krsDbFilmArsivim; Integrated Security = True");
 
+        string link;
+
         void filmler()
         {
             SqlDataAdapter da = new SqlDataAdapter("Select Ad,Link from TBLFILMLER", baglanti);
@@ -43,7 +45,7 @@ namespace Film_Arsivim
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int secilen = dataGridView1.SelectedCells[0].RowIndex;
-            string link = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            link = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
             webBrowser1.Navigate(link);
         }
 
@@ -64,6 +66,27 @@ namespace Film_Arsivim
             int b = rnd.Next(0, 255);
             int c = rnd.Next(0, 255);
             this.BackColor = System.Drawing.Color.FromArgb(a, b, c);
+        }
+
+        private void btnTamEkran_Click(object sender, EventArgs e)
+        {
+            if (link != "" && link != null)
+            {
+                FormTamEkran tamEkran = new FormTamEkran();
+                tamEkran.url = link;
+                tamEkran.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Bir Link Seçiniz");
+            }
+
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
