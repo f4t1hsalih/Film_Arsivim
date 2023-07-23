@@ -36,7 +36,7 @@ namespace Film_Arsivim
             komut.Parameters.AddWithValue("@p3", txtLink.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
-            MessageBox.Show("Film Listenize Eklendi","Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Film Listenize Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             filmler();
         }
 
@@ -59,6 +59,11 @@ namespace Film_Arsivim
 
         private void btnRenkDegistir_Click(object sender, EventArgs e)
         {
+            Random rnd = new Random();
+            int a = rnd.Next(0, 255);
+            int b = rnd.Next(0, 255);
+            int c = rnd.Next(0, 255);
+            this.BackColor = System.Drawing.Color.FromArgb(a, b, c);
 
         }
     }
