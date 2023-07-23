@@ -64,7 +64,6 @@ namespace Film_Arsivim
             int b = rnd.Next(0, 255);
             int c = rnd.Next(0, 255);
             this.BackColor = System.Drawing.Color.FromArgb(a, b, c);
-
         }
     }
 }
